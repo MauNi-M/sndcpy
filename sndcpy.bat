@@ -24,7 +24,7 @@ if not "%1"=="" (
 timeout 2
 
 echo Playing audio...
-%VLC% -Idummy --demux rawaud --network-caching=0 --play-and-exit tcp://localhost:%SNDCPY_PORT%
+%VLC% -Idummy --demux rawaud --network-caching=0 --clock-synchro=1 --play-and-exit tcp://localhost:%SNDCPY_PORT%
 goto :EOF
 
 :error
